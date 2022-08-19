@@ -14,4 +14,14 @@ const Button = React.forwardRef<HTMLButtonElement, Props>(
   }
 );
 
+interface InputProps extends React.HTMLProps<HTMLInputElement> {
+  children?: React.ReactNode;
+}
+
+const Input = (props: InputProps) => {
+  return <input {...props}>hello</input>;
+};
+
 <Button />;
+
+<Input />;
