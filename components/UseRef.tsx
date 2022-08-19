@@ -3,7 +3,7 @@ import * as React from 'react';
 const Header = () => {
   const headerRef = React.useRef<HTMLDivElement>(null);
 
-  React.useLayoutEffect(() => {
+  React.useEffect(() => {
     if (headerRef.current !== null) {
       console.log(headerRef.current);
     }
