@@ -5,6 +5,13 @@ type FormProps = {
   onSubmit: (n: number) => void;
 };
 
+// the as
+type context = {
+  name: string;
+  lastName: string;
+};
+const appContext = React.createContext<context>({} as context);
+
 const Click = () => {
   const [count, setCount] = React.useState<number>(0);
   const changeCount = (event: React.ChangeEvent<HTMLInputElement>) => {
